@@ -5,7 +5,7 @@
   box-sizing: border-box;
   text-align: center;
 }
-html{
+html {
   font-size: 62%;
   scroll-behavior: smooth;
 }
@@ -62,6 +62,12 @@ h3 {
   font-size: 24px;
   text-transform: uppercase;
   font-weight: 600;
+}
+h4 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-top: 2.5rem;
 }
 .box {
   padding: 1%;
@@ -177,7 +183,11 @@ header {
 
 /* ============= Team Section ================ */
 .team-section {
-  background: linear-gradient(rgba(231, 241, 248, .9), rgba(231, 241, 248, .9)), url(img/team-bg.jpg);
+  background: linear-gradient(
+      rgba(231, 241, 248, 0.9),
+      rgba(231, 241, 248, 0.9)
+    ),
+    url(img/team-bg.jpg);
   text-align: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -228,42 +238,46 @@ header {
   border-radius: 50%;
   font-size: 20px;
   padding: 10px;
-  transition: .5s;
+  transition: 0.5s;
 }
-.social-link ul li a i{
+.social-link ul li a i {
   color: white;
-
 }
-.social-link ul li a:hover i::before{
-background-color: #393939;
-transform: rotate(360deg);
+.social-link ul li a:hover i::before {
+  background-color: #393939;
+  transform: rotate(360deg);
 }
 
 /* =========SKILL SECTION ============== */
-.skill-section{
-  background: linear-gradient(rgba(255, 255, 255, .9), rgba(255, 255, 255, .9)), url(img/skill-bg.jpg);
+.skill-section {
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.9),
+      rgba(255, 255, 255, 0.9)
+    ),
+    url(img/skill-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 }
-.skill-section h2{
+.skill-section h2 {
   color: #3c4761;
 }
-.skill-section h3{
+.skill-section h3 {
   color: #3c4761;
 }
-.skill-section h2::after{
+.skill-section h2::after {
   background-color: #dfe8ed;
 }
-.skill-section .short-description{
+.skill-section .short-description {
   color: #626a7d;
 }
-.skill-section .box{
+.skill-section .box {
   margin-top: 45px;
 }
-svg.radial-progress circle{
+svg.radial-progress circle {
   stroke-width: 5;
 }
-svg.radial-progress text{
+svg.radial-progress text {
   fill: #3c4761;
   font-size: 16px;
 }
@@ -278,4 +292,55 @@ svg.graphics-design circle {
 }
 svg.ui-ux circle {
   stroke: #30bae7;
+}
+
+/* =========== PORTFOLIO SECTION */
+.portfolio-section {
+  background: linear-gradient(
+      rgba(255, 221, 153, 0.9),
+      rgba(255, 221, 153, 0.9)
+    ),
+    url(img/portfolio-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+.portfolio-section h2 {
+  color: #3c4761;
+}
+.portfolio-section h2:after {
+  background: #e5c37f;
+}
+.portfolio-section .btn-load {
+  background-color: #17c2a4;
+  border-color: #14a58c;
+}
+.portfolio-filter {
+  margin: 45px 0px;
+}
+.portfolio-filter button {
+  background: #ebc985;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 5px;
+  margin: 5px;
+  color: #3c4761;
+  transition: 0.5s;
+}
+.portfolio-filter button:hover {
+  cursor: pointer;
+  box-shadow: inset 0px 3px 5px rgba(60, 71, 97, 0.5);
+}
+.portfolio-img {
+  height: 300px;
+  width: 100%;
+}
+.portfolio-section .col:nth-child(3) {
+  margin-left: 0;
+}
+.portfolio-section .mixitup-control-active{
+  background: #fff;
 }
