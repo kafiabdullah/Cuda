@@ -62,6 +62,7 @@ h3 {
   font-size: 24px;
   text-transform: uppercase;
   font-weight: 600;
+  color: #fff;
 }
 h4 {
   font-size: 1.8rem;
@@ -360,4 +361,41 @@ svg.ui-ux circle {
 }
 .testimonial-section p{
   color: white;
+}
+.testimonial-section .col:nth-child(3){
+  margin-left: 0;
+}
+.testimonial-section .col:nth-child(1),
+.testimonial-section .col:nth-child(2){
+  margin-top: 40px;
+}
+.testimonial-section .col:nth-child(3),
+.testimonial-section .col:nth-child(4){
+  margin-top: 80px;
+}
+.client-photo{
+  float: left;
+  width: 100px;
+  
+}
+.client-photo img{
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 30px;
+}
+.client-review{
+  float: left;
+  width: 350px;
+}
+.client-review p{
+  font-size: 21px;
+  font-style: italic;
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+.client-review h3{
+}
+.client-review .role{
+  text-align: start;
+  color: #ffdd99;
 }
