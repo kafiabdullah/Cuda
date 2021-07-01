@@ -5,6 +5,10 @@
   box-sizing: border-box;
   text-align: center;
 }
+html{
+  font-size: 62%;
+  scroll-behavior: smooth;
+}
 
 body {
   font-family: "Open Sans", sans-serif;
@@ -232,4 +236,18 @@ header {
 .social-link ul li a:hover i::before{
 background-color: #393939;
 transform: rotate(360deg);
+}
+
+/* ===============skill Section================== */
+.skill-section{
+  background: linear-gradient(rgba(255, 255, 255, .9), rgba(255, 255, 255, .9)), url(img/skill-bg.jpg);
+}
+.skill-section h2{
+  color: #3c4761;
+}
+.skill-section h2::after{
+  background-color: #dfe8ed;
+}
+.skill-section .short-description{
+  color: #626a7d;
 }
