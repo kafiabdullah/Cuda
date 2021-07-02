@@ -399,3 +399,17 @@ svg.ui-ux circle {
   text-align: start;
   color: #ffdd99;
 }
+/* ========================contact-section============================= */
+.contact-section{
+  background: linear-gradient(rgba(60, 84, 153, .9),rgba(60, 84, 153, .9)), url(img/contact-bg.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.contact-section h2::after{
+ background: #273a71;
+}
+.contact-section .short-description{
+  color: #ffff;
+}
