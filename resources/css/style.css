@@ -445,3 +445,28 @@ svg.ui-ux circle {
 .contact-section textarea{
   height: 200px;
 }
+/* ==================== Footer Section */
+.footer-section{
+  background-color: #344b8e;
+  border-top: 1px solid #fff;
+  padding: 20px 0px;
+  text-align: center;
+}
+.footer-section ul{
+    text-align: center;
+}
+.footer-section li{
+    display: inline-block;
+    margin: 0 20px;
+}
+.footer-section a{
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+    text-transform: capitalize;
+}
+.footer-section a:hover{
+  cursor: pointer;
+  color: #30bae7;
+}
