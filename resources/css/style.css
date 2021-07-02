@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  text-align: center;
+  
 }
 html {
   font-size: 62%;
@@ -412,4 +412,36 @@ svg.ui-ux circle {
 }
 .contact-section .short-description{
   color: #ffff;
+}
+.btn-submit{
+  background-color: #30bae7;
+ 
+  border: none;
+  border-bottom: 3px solid #299ec5;
+}
+.btn-submit:hover{
+  cursor: pointer;
+}
+.contact-section form{
+  text-align: center;
+  margin-top: 50px;
+}
+.contact-section input[type="text"],
+.contact-section input[type="email"],
+.contact-section textarea{
+  background-color: #273a71;
+  color: #fff;
+  width: 100%;
+  border: 1px solid #273a71;
+  padding: 15px;
+  border-radius: 5px;
+  font-size: 18px;
+  margin: 5px 0px;
+}
+.contact-section form ::placeholder{
+  color: #fff;
+  opacity: 1;
+}
+.contact-section textarea{
+  height: 200px;
 }
