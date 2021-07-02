@@ -27,6 +27,9 @@ ul li {
   max-width: 1140px;
   margin: 0 auto;
 }
+:focus {
+  outline: 0;
+}
 /*================= Reusable Component============== */
 section {
   padding: 80px 0px;
@@ -68,6 +71,7 @@ h4 {
   font-weight: 400;
   text-transform: uppercase;
   margin-top: 2.5rem;
+  text-align: center;
 }
 .box {
   padding: 1%;
@@ -118,7 +122,7 @@ header {
   height: 40px;
 }
 /* ============ STICKY MENU =========== */
-.sticky{
+.sticky {
   position: fixed;
   top: 0;
   left: 0;
@@ -126,8 +130,9 @@ header {
   background: rgba(135, 80, 156, 0.9);
   padding: 10px 0px;
   box-shadow: 0 0 0 rgba(255, 255, 255, 0.9);
+  z-index: 9999;
 }
-.sticky .logo{
+.sticky .logo {
   margin-top: 0;
 }
 .sticky .main-nav {
@@ -159,6 +164,57 @@ header {
   border-radius: 3px;
   transition: 0.3s;
 }
+.mobile-menu span {
+  float: right;
+  color: #fff;
+  font-size: 30px;
+  margin-top: 20px;
+  display: none;
+}
+.mobile-menu span:hover {
+  cursor: pointer;
+}
+
+.overlay {
+  width: 0;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  overflow-x: hidden;
+  background-color: rgba(0, 0, 0, 0.9);
+  transition: 0.5s;
+}
+.overlay-content {
+  position: relative;
+  top: 10%;
+  width: 100%;
+  text-align: center;
+}
+.overlay a {
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 30px 0px;
+  display: block;
+  letter-spacing: 3px;
+  color: #999;
+  font-size: 30px;
+}
+.overlay a:hover {
+  color: #fff;
+}
+.overlay  .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 50px;
+  color: #999;
+}
+.sticky .mobile-menu span{
+  line-height: 1;
+  margin-top: 0;
+}
 .active {
   background: #643a79;
   border-radius: 3px;
@@ -169,6 +225,7 @@ header {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+  width: 1140px;
 }
 .btn-hero:link,
 .btn-hero:visited {
@@ -197,7 +254,7 @@ header {
   margin-bottom: 35px;
 }
 
-/* ============= Team Section ================ */
+/* =============================== Team Section =================================== */
 .team-section {
   background: linear-gradient(
       rgba(231, 241, 248, 0.9),
@@ -289,6 +346,7 @@ header {
 }
 .skill-section .box {
   margin-top: 45px;
+  text-align: center;
 }
 svg.radial-progress circle {
   stroke-width: 5;
@@ -352,7 +410,7 @@ svg.ui-ux circle {
   box-shadow: inset 0px 3px 5px rgba(60, 71, 97, 0.5);
 }
 .portfolio-img {
-  height: 300px;
+  height: 100%;
   width: 100%;
 }
 .portfolio-section .col:nth-child(3) {

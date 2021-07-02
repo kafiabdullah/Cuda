@@ -27,8 +27,8 @@
     <header id="home">
       <nav>
         <div class="row">
-          <a href="#">
-            <img src="resources/img/logo.png" class="logo" alt="" Cuda />
+          <a href="#home">
+            <img src="resources/img/logo.png" class="logo" alt="Cuda" />
           </a>
           <ul class="main-nav">
             <li class="active"><a href="#home">HOME</a></li>
@@ -39,6 +39,24 @@
             <li><a href="#testimonial">TESTIMONIAL</a></li>
             <li><a href="#contact">CONTACT</a></li>
           </ul>
+          <div class="mobile-menu">
+            <span onclick="openNav()">&#9776;</span>
+            <div class="overlay" id="myNav">
+              <a href="javascript:void(0)" onclick="closeNav()" class="closebtn"
+                >&times;</a
+              >
+
+              <div class="overlay-content">
+                <a onclick="closeNav()" href="#home">HOME</a>
+                <a onclick="closeNav()" href="#service">SERVICE</a>
+                <a onclick="closeNav()" href="#team">TEAM</a>
+                <a onclick="closeNav()" href="#skill">SKILL</a>
+                <a onclick="closeNav()" href="#portfolio">PORTFOLIO</a>
+                <a onclick="closeNav()" href="#testimonial">TESTIMONIAL</a>
+                <a onclick="closeNav()" href="#contact">CONTACT</a>
+              </div>
+            </div>
+          </div>
         </div>
       </nav>
       <div class="row">
