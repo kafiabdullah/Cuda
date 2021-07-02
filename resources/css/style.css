@@ -189,14 +189,14 @@ header {
 }
 .overlay-content {
   position: relative;
-  top: 10%;
+  top: 5%;
   width: 100%;
   text-align: center;
 }
 .overlay a {
   text-decoration: none;
   text-transform: uppercase;
-  padding: 30px 0px;
+  padding: 20px 0px;
   display: block;
   letter-spacing: 3px;
   color: #999;
@@ -205,14 +205,14 @@ header {
 .overlay a:hover {
   color: #fff;
 }
-.overlay  .closebtn {
+.overlay .closebtn {
   position: absolute;
-  top: 20px;
+
   right: 45px;
   font-size: 50px;
   color: #999;
 }
-.sticky .mobile-menu span{
+.sticky .mobile-menu span {
   line-height: 1;
   margin-top: 0;
 }
